@@ -9,13 +9,14 @@
     "antd": "^5.25.4",
     "mockjs": "^1.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
     "@applint/spec": "^1.2.3",
     "@ice/app": "^3.0.0",
-    "@ice/plugin-i18n": "^5.0.1",
     "@ice/plugin-miniapp": "^1.0.0",
+    "@ice/plugin-store": "^1.1.2",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "eslint": "^8.35.0",
@@ -24,7 +25,7 @@
   },
   "scripts": {
     "h": "ice help",
-    "start": "ice start --port 5000 --https",
+    "start": "ice start",
     "start:wechat": "ice start --target wechat-miniprogram",
     "start:ali": "ice start --target ali-miniapp",
     "build": "ice build",
