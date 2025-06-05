@@ -36,6 +36,9 @@ importers:
       '@ice/app':
         specifier: ^3.0.0
         version: 3.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@ice/plugin-i18n':
+        specifier: ^5.0.1
+        version: 5.0.1(@ice/app@3.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@ice/runtime@1.5.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@ice/plugin-miniapp':
         specifier: ^1.0.0
         version: 1.2.3(@swc/helpers@0.5.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -595,6 +598,12 @@ packages:
     resolution: {integrity: sha512-0aMgfqWYHikCVo1N1InggIMSfhQkM5Un5WkqMyDM9fLF47aww2ZZ/FbotTByZGiq/ccitDZEdpfHWKPKBO63oQ==}
     engines: {node: '>= 10'}
 
+  '@ice/plugin-i18n@5.0.1':
+    resolution: {integrity: sha512-1Du9iEprPG2EER250H+mFxN+PtVojR0hnoR8Rfb4ZIaGOSOHrrEIXd2ipIPrCJwcXsNbbHGZnLfy2Hi3FQAmSg==}
+    peerDependencies:
+      '@ice/app': ^3.4.9
+      '@ice/runtime': ^1.4.8
+
   '@ice/plugin-miniapp@1.2.3':
     resolution: {integrity: sha512-cxZw2LeNajlM0qR/uIG8CNtagnCnm1VaMkMYAaqJP2xU8LpFAtxs/TgBKP1DpeDvAtJy0ipHrBMvqRsOWiDWpg==}
 
@@ -814,6 +823,9 @@ packages:
   '@types/connect@3.4.38':
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
 
+  '@types/cookie@0.3.3':
+    resolution: {integrity: sha512-LKVP3cgXBT9RYj+t+9FDKwS5tdI+rPBXaNSkma7hvqy35lc7mAokC2zsqWJH0LaqIt3B962nuYI77hsJoT1gow==}
+
   '@types/express-serve-static-core@4.19.6':
     resolution: {integrity: sha512-N4LZ2xG7DatVqhCZzOGb1Yi5lMbXSZcmdLDe9EzSndPV2HpWYWzRbaerl2n27irrm94EPpprqa8KpskPT085+A==}
 
@@ -933,6 +945,9 @@ packages:
 
   abortcontroller-polyfill@1.7.5:
     resolution: {integrity: sha512-JMJ5soJWP18htbbxJjG7bG6yuI6pRhgJ0scHHTfkUjf6wjP912xZWvM+A4sJK3gqd9E8fcPbDnOefbA9Th/FIQ==}
+
+  accept-language-parser@1.5.0:
+    resolution: {integrity: sha512-QhyTbMLYo0BBGg1aWbeMG4ekWtds/31BrEU+DONOg/7ax23vxpL03Pb7/zBmha2v7vdD3AyzZVWBVGEZxKOXWw==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -1208,6 +1223,10 @@ packages:
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
+
+  cookie@0.4.2:
+    resolution: {integrity: sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==}
+    engines: {node: '>= 0.6'}
 
   copy-anything@2.0.6:
     resolution: {integrity: sha512-1j20GZTsvKNkc4BY3NpMOM8tt///wY3FpIzozTOFO2ffuZcV61nojHXVKIy3WM+7ADCy5FVhdZYHYDdgTU0yJw==}
@@ -3104,6 +3123,9 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
+  universal-cookie@4.0.4:
+    resolution: {integrity: sha512-lbRVHoOMtItjWbM7TwDLdl8wug7izB0tq3/YVKhT/ahB4VDvWMyvnADfnJI8y6fSvsjh51Ix7lTGC6Tn4rMPhw==}
+
   universal-env@3.3.3:
     resolution: {integrity: sha512-4ZyITvWhtcurCEA66Cb7jcd4zpEiAAo91wSwbEscbiu033pIsC2yjgT8LYyasFgsst6jZHD1gtVoSyYcL8oH1Q==}
     engines: {npm: '>=3.0.0'}
@@ -3127,6 +3149,10 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
+
+  url-join@5.0.0:
+    resolution: {integrity: sha512-n2huDr9h9yzd6exQVnH/jU5mr+Pfx08LRXXZhkLLetAMESRj+anQsTAh940iMrIetKAmry9coFuZQ2jY8/p3WA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
@@ -3813,6 +3839,18 @@ snapshots:
       '@ice/pack-binding-win32-ia32-msvc': 0.0.13
       '@ice/pack-binding-win32-x64-msvc': 0.0.13
 
+  '@ice/plugin-i18n@5.0.1(@ice/app@3.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@ice/runtime@1.5.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@ice/app': 3.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@ice/jsx-runtime': 0.3.1(react@18.3.1)
+      '@ice/runtime': 1.5.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@swc/helpers': 0.5.17
+      accept-language-parser: 1.5.0
+      universal-cookie: 4.0.4
+      url-join: 5.0.0
+    transitivePeerDependencies:
+      - react
+
   '@ice/plugin-miniapp@1.2.3(@swc/helpers@0.5.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@ice/bundles': 0.2.9(@swc/helpers@0.5.1)
@@ -4069,6 +4107,8 @@ snapshots:
     dependencies:
       '@types/node': 22.15.21
 
+  '@types/cookie@0.3.3': {}
+
   '@types/express-serve-static-core@4.19.6':
     dependencies:
       '@types/node': 22.15.21
@@ -4216,6 +4256,8 @@ snapshots:
   '@uni/env@1.1.1': {}
 
   abortcontroller-polyfill@1.7.5: {}
+
+  accept-language-parser@1.5.0: {}
 
   acorn-jsx@5.3.2(acorn@8.14.1):
     dependencies:
@@ -4572,6 +4614,8 @@ snapshots:
       q: 1.5.1
 
   convert-source-map@2.0.0: {}
+
+  cookie@0.4.2: {}
 
   copy-anything@2.0.6:
     dependencies:
@@ -6803,6 +6847,11 @@ snapshots:
 
   undici-types@6.21.0: {}
 
+  universal-cookie@4.0.4:
+    dependencies:
+      '@types/cookie': 0.3.3
+      cookie: 0.4.2
+
   universal-env@3.3.3:
     dependencies:
       '@uni/env': 1.1.1
@@ -6822,6 +6871,8 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
+
+  url-join@5.0.0: {}
 
   util-deprecate@1.0.2: {}
 
