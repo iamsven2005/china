@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@ant-design/icons':
+        specifier: 5.x
+        version: 5.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@ice/runtime':
         specifier: ^1.4.0
         version: 1.5.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
