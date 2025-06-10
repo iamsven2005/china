@@ -1,3 +1,4 @@
+import { Button } from 'antd';
 import { useState } from 'react';
 
 export default function Count() {
@@ -5,7 +6,7 @@ export default function Count() {
   return (
     <div>
       <p>count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>add</button>
+      <Button onClick={() => setCount(count + 1)}>add</Button>
     </div>
   );
 }
